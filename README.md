@@ -8,6 +8,7 @@ The vps setup will install
 - python-dev
 - docker.io
 - file
+- mongodb
 
 # From pip repo
 - virtualenvwrapper

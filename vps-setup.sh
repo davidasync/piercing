@@ -7,7 +7,7 @@ sudo apt-get update
 sudo apt-get install -y \
     git curl vim htop file \
     python-pip python-dev python-setuptools \
-    build-essential docker.io
+    build-essential docker.io mongodb
 
 # Add current user to docker group
 sudo usermod -a -G docker $USER
