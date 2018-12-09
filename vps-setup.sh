@@ -20,6 +20,11 @@ source /usr/local/bin/virtualenvwrapper_lazy.sh
 curl -s "https://get.sdkman.io" | bash
 source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+# Install nvm and lastest nodejs
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.11/install.sh | bash
+
 # Install java 8
 sdk install java 8.0.191-oracle
 
+# Install nodejs
+nvm install node
