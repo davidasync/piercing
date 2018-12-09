@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # Update repository
 sudo apt-get update
 
@@ -30,5 +31,6 @@ sdk install java 8.0.191-oracle
 # Install nodejs
 nvm install node
 
-# Install brew
+# Install brew and put it to path
 HOMEBREW_FORCE_VENDOR_RUBY=1 sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
+echo 'export PATH="$PATH:/home/linuxbrew/.linuxbrew/bin"' >> ~/.bashrc
