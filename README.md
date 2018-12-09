@@ -4,11 +4,10 @@ The vps setup will install
 - curl
 - vim
 - htop 
-- exfat-utils
-- exfat-fuse
 - python-pip
 - python-dev
 - docker.io
+- file
 
 # From pip repo
 - virtualenvwrapper
@@ -18,3 +17,4 @@ The vps setup will install
 - nvm
 - java 8.0.191-oracle
 - latest nodejs
+- brew

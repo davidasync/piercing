@@ -4,8 +4,9 @@ sudo apt-get update
 
 # Install base tools
 sudo apt-get install -y \
-    git curl vim htop exfat-utils exfat-fuse \
-    python-pip python-dev docker.io
+    git curl vim htop file \
+    python-pip python-dev python-setuptools \
+    build-essential docker.io
 
 # Add current user to docker group
 sudo usermod -a -G docker $USER
@@ -28,3 +29,6 @@ sdk install java 8.0.191-oracle
 
 # Install nodejs
 nvm install node
+
+# Install brew
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/Linuxbrew/install/master/install.sh)"
