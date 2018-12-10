@@ -5,7 +5,7 @@ sudo apt-get update
 
 # Install base tools
 sudo apt-get install -y \
-    git curl vim htop file zip gzip tar build-essential \
+    git curl vim htop file zip gzip tar build-essential supervisor \
     python-pip python-dev python-setuptools \
     docker.io mongodb
 

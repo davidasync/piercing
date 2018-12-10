@@ -4,10 +4,15 @@ The vps setup will install
 - curl
 - vim
 - htop 
+- file
+- zip
+- gzip
+- build-essential
+- supervisor
 - python-pip
 - python-dev
+- python-setuptools
 - docker.io
-- file
 - mongodb
 
 # From pip repo
