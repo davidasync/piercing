@@ -1,0 +1,26 @@
+[user]
+        email = davidasync@gmail.com
+        name = davidasync
+
+[alias]
+        b = branch
+        co = checkout
+        com = checkout master
+        cod = checkout develop
+        cob = checkout -b
+        plom = pull origin master
+        psom = push origin master
+        pl = !sh -c 'git gc --prune=now && git remote prune origin && git pull'
+        ps = push
+        st = status
+        rbm = rebase master
+        rbd = rebase develop
+        l = log --color --decorate --graph --oneline
+        update-fork = !sh -c 'git fetch upstream && git rebase upstream/master && git push origin master'
+        rm-useless = !sh -c 'git branch | grep -v "master" | xargs git branch -D'
+        log-folder = log --name-status -10 
+
+[log]
+  date = relative
+[format]
+  pretty = format:%C(auto,yellow)%h%C(auto,magenta)% G? %C(auto,blue)%>(12,trunc)%ad %C(auto,green)%<(20,trunc)%aN%C(auto,reset)%s%C(auto,red)% gD% D
